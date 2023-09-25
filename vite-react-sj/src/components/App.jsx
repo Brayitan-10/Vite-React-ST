@@ -1,10 +1,13 @@
-import { useState } from 'react';
-import './App.css';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
+import { useState } from 'react'
+import reactLogo from '../assets/react.svg'
+import './App.css'
+import {
+  element, elementTwo, MyComponent, ProfileCard,
+} from './IntroReact'
+import viteLogo from '/vite.svg'
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(0)
 
   return (
     <>
@@ -34,8 +37,12 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      {element}
+      {elementTwo}
+      <MyComponent name="Pepito" lastName="S~<[°{xXxJxXx}°]>~B" />
+      <ProfileCard name="xXxAlonzoxXx" age={22} />
     </>
-  );
+  )
 }
 
-export default App;
+export default App

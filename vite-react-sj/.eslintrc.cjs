@@ -14,10 +14,12 @@ module.exports = {
   settings: { react: { version: '18.2' } },
   plugins: ['react-refresh'],
   rules: {
+    'import/extensions': 'off',
     'react/react-in-jsx-scope': 'off',
     'import/no-unresolved' : 'off',
     'import/no-absolute-path': 'off',
     'linebreak-style': 'off',
+    'semi': ['error', 'never'],
     'react-refresh/only-export-components': [
       'warn',
       { allowConstantExport: true },
